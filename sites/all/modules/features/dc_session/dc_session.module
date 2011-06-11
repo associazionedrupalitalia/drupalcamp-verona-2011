@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Camp Session feature.
+ */
+
+include_once('dc_session.features.inc');
