@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupa Camp User feature.
+ */
+
+include_once('dc_user.features.inc');
