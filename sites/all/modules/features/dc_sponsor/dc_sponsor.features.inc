@@ -9,8 +9,12 @@
  */
 function dc_sponsor_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "boxes" && $api == "box") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
-    return array("version" => 1);
+    return array("version" => "1");
   }
 }
 
@@ -20,7 +24,7 @@ function dc_sponsor_ctools_plugin_api() {
 function dc_sponsor_views_api() {
   list($module, $api) = func_get_args();
   if ($module == "views" && $api == "views_default") {
-    return array("version" => 3.0);
+    return array("version" => "3.0");
   }
 }
 
@@ -109,7 +113,7 @@ function dc_sponsor_node_info() {
       'base' => 'node_content',
       'description' => t('Drupal Camp Sponsor'),
       'has_title' => '1',
-      'title_label' => t('Name'),
+      'title_label' => t('Nome'),
       'help' => '',
     ),
   );

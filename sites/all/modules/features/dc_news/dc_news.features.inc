@@ -9,8 +9,12 @@
  */
 function dc_news_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
-    return array("version" => 1);
+    return array("version" => "1");
   }
 }
 
@@ -20,7 +24,7 @@ function dc_news_ctools_plugin_api() {
 function dc_news_views_api() {
   list($module, $api) = func_get_args();
   if ($module == "views" && $api == "views_default") {
-    return array("version" => 3.0);
+    return array("version" => "3.0");
   }
 }
 
@@ -34,17 +38,18 @@ function dc_news_image_default_styles() {
   $styles['news_preview'] = array(
     'name' => 'news_preview',
     'effects' => array(
-      2 => array(
-        'label' => 'Scala e ritaglia',
-        'help' => 'Scala e ritaglia preserva il rapporto di dimensioni dell\'immagine originale per poi ritagliare la dimensione in eccesso. Questo metodo è utile nei casi in cui si desidera ottenere delle miniature perfettamente quadrate senza deformare l\'immagine.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
+      4 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
         'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'name' => 'image_scale',
         'data' => array(
           'width' => '300',
           'height' => '200',
+          'upscale' => 0,
         ),
         'weight' => '1',
       ),
@@ -64,7 +69,7 @@ function dc_news_node_info() {
       'base' => 'node_content',
       'description' => t('News'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titolo'),
       'help' => '',
     ),
   );

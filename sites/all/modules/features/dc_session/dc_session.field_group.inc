@@ -24,7 +24,8 @@ function dc_session_field_group_info() {
     'children' => array(
       0 => 'field_session_approved',
       1 => 'field_session_room',
-      2 => 'field_session_datetime',
+      2 => 'field_session_day',
+      3 => 'field_session_slot',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -49,10 +50,12 @@ function dc_session_field_group_info() {
     'label' => 'Session data',
     'weight' => '1',
     'children' => array(
-      0 => 'field_session_type',
+      0 => 'field_session_argument',
       1 => 'field_session_lang',
-      2 => 'field_session_argument',
-      3 => 'field_session_level',
+      2 => 'field_session_level',
+      3 => 'field_session_type',
+      4 => 'field_session_userday',
+      5 => 'field_session_speakers',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -77,9 +80,9 @@ function dc_session_field_group_info() {
     'label' => 'Post conf',
     'weight' => '3',
     'children' => array(
-      0 => 'field_session_video',
-      1 => 'field_session_slide',
-      2 => 'field_session_slide_pdf',
+      0 => 'field_session_slide',
+      1 => 'field_session_slide_pdf',
+      2 => 'field_session_video',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
