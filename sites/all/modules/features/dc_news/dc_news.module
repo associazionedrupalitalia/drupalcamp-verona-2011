@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Camp News feature.
+ */
+
+include_once('dc_news.features.inc');

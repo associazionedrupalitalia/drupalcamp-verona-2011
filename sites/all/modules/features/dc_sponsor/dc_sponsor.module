@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Camp Sponsor feature.
+ */
+
+include_once('dc_sponsor.features.inc');
