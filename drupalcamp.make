@@ -73,14 +73,14 @@ projects[devel_themer][subdir] = "devel"
 
 
 ;; L10n
-projects[i18n][subdir] = "contrib"
+projects[i18n][subdir] = "l10n"
 projects[i18n][version] = 1.0-rc1
-;projects[languageicons][subdir] = "contrib"
-projects[translation_helpers][subdir] = "contrib"
+;projects[languageicons][subdir] = "l10n"
+projects[translation_helpers][subdir] = "l10n"
 projects[translation_helpers][version] = 1.x-dev
-projects[translation_overview][subdir] = "contrib"
-;projects[translation_management][subdir] = "contrib"
-;projects[transliteration][subdir] = "contrib"
+projects[translation_overview][subdir] = "l10n"
+;projects[translation_management][subdir] = "l10n"
+;projects[transliteration][subdir] = "l10n"
 
 
 ; Themes
