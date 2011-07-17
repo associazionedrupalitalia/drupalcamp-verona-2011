@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Camp I18n feature.
+ */
+
+include_once('dc_i18n.features.inc');
