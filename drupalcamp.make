@@ -84,8 +84,8 @@ projects[translation_overview][subdir] = "l10n"
 
 
 ; Themes
-projects[] = tao
-projects[] = rubik
+;projects[] = tao
+;projects[] = rubik
 projects[omega][version] = 3.0-beta3
 
 ; Libraries
