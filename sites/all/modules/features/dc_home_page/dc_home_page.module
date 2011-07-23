@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Home page feature.
+ */
+
+include_once('dc_home_page.features.inc');
