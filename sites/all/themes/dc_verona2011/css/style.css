@@ -1814,3 +1814,36 @@ font-size:16px;
 h6 {
 font-size:14px;
 }
+
+/* Header site name */
+.site-name-slogan {
+  display: none;
+}
+
+/* Header login block */
+#zone-branding {
+  margin-top: -50px;
+}
+
+#block-user-login .form-item-name {
+  float: left;
+  padding: 0 10px;
+}
+
+#block-user-login .form-item-pass {
+  float: left;
+  padding: 0 10px;
+}
+
+#block-user-login .item-list {
+  display: none;
+}
+
+#block-user-login .form-actions {
+  float: left;
+}
+
+/* Sponsor Silver */
+#region-sidebar-second .view-sponsor-block .views-row {
+  margin-bottom: 15px;
+}
